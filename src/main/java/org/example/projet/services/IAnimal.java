@@ -1,5 +1,7 @@
 package org.example.projet.services;
 
-public interface IAnimal {
+import org.example.projet.entities.Animal;
 
+public interface IAnimal {
+    public Animal addOrUpdateAnimal(Animal animal);
 }
