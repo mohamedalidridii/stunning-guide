@@ -1,9 +1,9 @@
 package org.example.projet.repositories;
 
-import org.example.projet.entities.Animal;
+import org.example.projet.entities.FamilleActe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AnimalRepository extends JpaRepository<Animal, Long> {
+public interface FamilleActeRepository extends JpaRepository<FamilleActe, Long> {
 }

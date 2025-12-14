@@ -5,5 +5,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-public class UtilisateurImp implements IUtilisateur {
+public class PatientImp implements IPatient {
 }

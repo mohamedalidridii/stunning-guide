@@ -1,4 +1,4 @@
 package org.example.projet.services;
 
-public interface IUtilisateur {
+public interface IPatient {
 }

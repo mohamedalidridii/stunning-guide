@@ -4,8 +4,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/utilisateurController")
+@RequestMapping("/patientController")
 
-public class UtilisateurController {
+public class PatientController {
 
 }

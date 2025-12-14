@@ -4,9 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
+
 
 @Entity
 @Getter
@@ -15,15 +15,14 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Utilisateur {
+public class Pathologie {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
-
-    String nomComplet;
-    String email;
-    LocalDate dateInscription;
-
-
+    Long idPath;
+    String codePath;
+    String libelle;
+    String description;
+    Boolean archive = false;
 
 }

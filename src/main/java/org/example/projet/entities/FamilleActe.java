@@ -1,5 +1,6 @@
 package org.example.projet.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -14,15 +15,19 @@ import java.util.Set;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class Animal {
+public class FamilleActe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long idAnimal;
-    String nom;
-    String espece;
-    Etat etat;
+    Long idFA;
+    String codeFA;
+    String libelle;
+    String description;
 
-    @ManyToMany()
-    Set<DemandeDadoption> demandes = new HashSet<>() ;
+    @OneToMany()
+    @JsonIgnore
+    @ToString.Exclude
+    Set<Acte> Actes= new HashSet<>();
+
+
 
 }

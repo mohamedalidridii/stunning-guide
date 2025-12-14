@@ -5,5 +5,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-public class DemandeDadoptionImp implements IdemandeDadoption {
+public class ActeImp implements IActe {
+
 }

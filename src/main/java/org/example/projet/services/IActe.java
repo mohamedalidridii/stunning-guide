@@ -1,4 +1,4 @@
 package org.example.projet.services;
 
-public interface IdemandeDadoption {
+public interface IActe {
 }
